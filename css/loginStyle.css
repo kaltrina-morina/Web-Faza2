@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+}
+#mainPage {
+    width:100%;
+    min-height: calc(100vh * .824);
+    background-color: #d3d3d3;
+}
+#korniza{
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px 20px 50px;
+    margin-top: 4% ;
+
+}
+.box{
+    width: 31.5%;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: rgb(0 0 0 / 7%) 0px 3px 4px 0px, rgb(0 0 0 / 6%) 0px 3px 3px -2px, rgb(0 0 0 / 10%) 0px 1px 8px 0px;
+    background-color: white;
+    text-align: center;
+}
+.box h1{
+    text-align: center;
+    color: #363636;
+    margin-bottom: 6.5%;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#email,#password{
+    display: block;
+    height: 45px;
+    width: 80%;
+    margin: 6px auto;
+    border: 1px solid #a8a8a8;
+    border-radius: 5px;
+    transition: width 0.25s;
+    outline: none;
+    background-color: #fafafa;
+    color: #262626;
+    margin-bottom: 15px;
+}
+#email:focus,#password:focus{
+    width: 90%;
+    transition: width 0.25s;
+    border: 1px solid #a8a8a8;
+}
+.box input{
+    width: 100%;
+    line-height: 40px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: white;
+    box-sizing: border-box;
+    border: 1px solid #01303f;
+    border-radius: 10px;
+}
+.box p{
+    margin-top: -2%;
+    margin-left: 10.5%;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 80%;
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+    -o-user-select: none; user-select: none;
+}
+#loginButton{
+    height: 45px;
+    width: 40%;
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+    background-color:#83b735;
+    color: #F2F2F2;
+    font-size: 110%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:none;
+    display: inline-block;
+    vertical-align:middle;
+    margin-bottom: 20px;
+    margin-top: 1rem;
+}
+#loginButton:hover{
+    background-color:#8dc538;
+    cursor: pointer;
+}
+
+#signUp{
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px 20px 50px;
+    background-color: #d3d3d3;
+    padding-bottom: 5.5%;
+}
+#signBox{
+    width: 31.5%;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: rgb(0 0 0 / 7%) 0px 3px 4px 0px, rgb(0 0 0 / 6%) 0px 3px 3px -2px, rgb(0 0 0 / 10%) 0px 1px 8px 0px;
+    background-color: white;
+    text-align: center;
+}
+#signUp a{
+    text-decoration: none;
+    color:#0374a8;
+}
+#signUp a:hover{
+    text-decoration: underline;
+}

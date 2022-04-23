@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+}
+#categMain {
+    display: table;
+    width: 100%;
+    min-height: 82.4vh;
+}
+#leftSide {
+    display: table-cell;
+    width:15%;
+    height:100%;
+    vertical-align: top;
+    background-color:rgba(0, 0, 0, 0.247);
+}
+#rightSide {
+    display: table-cell;
+    width: 84vw;
+    height:auto;
+    text-align: center;
+    vertical-align: top;
+    padding-bottom: 3%;
+}
+
+table{
+    margin-top: 7%;
+    margin-right: auto;
+    margin-left:auto;
+    width: 70%;
+    font-size: 120%;
+    font-family: monospace;
+    border: 1px solid #dee2e6;
+}
+table th{
+    border-top: 1px solid #dee2e6;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+table td{
+    border-top: 1px solid #dee2e6;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#userHeader{
+    background-color: #83b735;
+    color: #F2F2F2;
+}
+#productHeader{
+    background-color: #83b735;
+    color: #F2F2F2;
+}
+#editButton{
+    text-decoration: none;
+    color: rgb(17, 154, 17);
+}
+#deleteButton{
+    text-decoration: none;
+    color: rgb(253, 0, 0);
+}
+#newProduct{
+    color: rgb(6, 169, 6);
+    text-decoration: none;
+}
