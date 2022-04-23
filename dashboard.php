@@ -3,10 +3,17 @@
 require_once ('../Objects/UserController.php');
 $users = new UserController;
 $allUsers = $users->readData();?>
+
 <?php require_once('../Objects/Produkti.php');
 require_once('../Objects/ProduktiController.php');
 $produktet = new ProduktiController;
 $allProducts = $produktet->readData();?>
+
+<?php require_once('../Objects/kontakti.php');
+require_once('../Objects/ContactController.php');
+$kontakti = new ContactController;
+$allContacts = $kontakti->readData();?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,6 +45,16 @@ $allProducts = $produktet->readData();?>
                 }
                 ?>
                 <tr><td colspan="6"><a href="../ProductManagement/createProduct.php" id="newProduct">+ ADD COURSES</a></td></tr>
+            </table>
+
+            <table id="userTable">
+                <tr><td colspan="9" id="userHeader">Contact Table</td></tr>
+                <tr><th>Name</th><th>Last name</th><th>Email</th><th>Message</th>
+                <?php foreach($allContacts as $contact){
+                    $contactString = new Contact($contact['firstname'],$contact['lastname'],$contact['email'],$contact['message']);
+
+                    echo $contactString;
+                }?>
             </table>
         </div>
     </div>
